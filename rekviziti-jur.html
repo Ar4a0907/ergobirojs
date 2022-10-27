@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Ergobirojs</title>
+</head>
+<body>
+    <div class="mob-menu">
+        <div class="menu-header">
+            <div class="left-side">
+                <div class="close">
+                    <img src="./assets/images/close-mob.svg" alt="">
+                </div>
+            </div>
+            <a href="./index.html" class="index-link">
+                <img src="./assets/images/logo-orange.svg" alt="Logo">
+            </a>
+            <div class="right-side">
+                <a href="#">
+                    <img src="./assets/images/profile-mob.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/images/cart-mob.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="menu-body">
+            <a href="./ergonomika.html">Par Ergonomiku</a>
+            <a href="./par-mums.html">Par mums</a>
+            <a href="./jaunumi.html">Jaunumi</a>
+            <a href="./eveikals-galvena.html">E-veikals</a>
+            <a href="./rekviziti-fiz.html">Mans profils</a>
+            <a href="./grozs.html">Grozs</a>
+            <a href="./kontakti.html">Kontakti</a>
+            <a href="./piegades-adrese.html">Piegāde</a>
+            <a href="./text-page.html">Privātuma politika</a>
+            <a href="#">
+                <img src="./assets/images/facebook.svg" alt="">
+                Facebook
+            </a>
+            <a href="#">
+                <img src="./assets/images/instagram.svg" alt="">
+                Instagram
+            </a>
+        </div>
+    </div>
+
+    <div class="pop-ups">
+        <div class="pop-up login">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="21.2134" width="30" height="30" rx="15" transform="rotate(45 21.2134 0)" fill="#1F2022"/>
+                <path d="M25.4561 16.9707L16.9708 25.456" stroke="white" stroke-width="3"/>
+                <path d="M25.4561 25.4561L16.9708 16.9708" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="title">Pieslēgties</div>
+            <form>
+                <input type="email" id="email-login" name="email" placeholder="E-pasts" class="text-input">
+                <input type="password" name="password" id="password" placeholder="Parole" class="text-input">
+                <input type="submit" value="Nosutīt">
+            </form>
+            <div class="forgot">
+                Aizmirsu paroli
+            </div>
+            <a href="./registracija-fiz.html">
+                Reģistrēties
+            </a>
+        </div>
+        <div class="pop-up forgot">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="21.2134" width="30" height="30" rx="15" transform="rotate(45 21.2134 0)" fill="#1F2022"/>
+                <path d="M25.4561 16.9707L16.9708 25.456" stroke="white" stroke-width="3"/>
+                <path d="M25.4561 25.4561L16.9708 16.9708" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="title">Aizmirsu paroli</div>
+            <form>
+                <input type="email" id="email-forgot" name="email" placeholder="E-pasts" class="text-input">
+                <p>
+                    Ievadiet savu epasta adresi un mēs jums nosūtīsim instrukciju kā izveidot jaunu paroli
+                </p>
+                <input type="submit" value="Nosutīt" class="send-btn">
+            </form>
+        </div>
+        <div class="pop-up ty">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="21.2134" width="30" height="30" rx="15" transform="rotate(45 21.2134 0)" fill="#1F2022"/>
+                <path d="M25.4561 16.9707L16.9708 25.456" stroke="white" stroke-width="3"/>
+                <path d="M25.4561 25.4561L16.9708 16.9708" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="title">Paldies</div>
+            <p>Mēs jums nosūtīsim instrukciju kā izveidot jaunu paroli</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="left-side">
+                <a href="./ergonomika.html">Par Ergonomiku</a>
+                <a href="./par-mums.html">Par mums</a>
+                <a href="./jaunumi.html">Jaunumi</a>
+            </div>
+            <div class="left-side mob">
+                <img src="./assets/images/hamburger.svg" alt="" class="hamburger">
+            </div>
+            <a href="./index.html" class="index-link">
+                <img src="./assets/images/logo-orange.svg" alt="Logo">
+            </a>
+            <div class="right-side">
+                <a href="./eveikals-galvena.html">E-veikals</a>
+                <a href="./kontakti.html">Kontakti</a>
+                <a href="#" class="active" id="login-desk"><img src="./assets/images/person-icon.svg" alt="Icon"><img src="./assets/images/person-icon-white.svg" alt="" class="cart-white"></a>
+                <a href="./grozs.html">
+                    <img src="./assets/images/cart.svg" alt="">
+                    <img src="./assets/images/cart-white.svg" alt="" class="cart-white">
+                    <div class="items"><span>4</span></div>
+                </a>
+            </div>
+            <div class="right-side mob"> 
+                <a href="#" id="login-mob">
+                    <img src="./assets/images/profile-mob.svg" alt="Profile">
+                </a>
+                <a href="#">
+                    <img src="./assets/images/cart-mob.svg" alt="Cart">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="catalog-mob">
+            <div class="dropdown">
+                <div class="head">
+                    Rekvizīti
+                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 1.07451L8 7.07451L2 1.07451" stroke="#1F2022" stroke-width="3"/>
+                     </svg>  
+                </div>
+                <div class="body">
+                    <a href="./piegades-adrese.html">Piegādes adrese</a>
+                    <a href="./pirkumi.html">Pirkumi</a>
+                </div>
+            </div>
+        </div>
+        <section class="page-content sand-bg">
+            <div class="content-wrap">
+                <h2>Mans konts</h2>
+                <div class="detached">
+                    <aside>
+                        <a href="#" class="active">Rekvizīti</a>
+                        <a href="./piegades-adrese.html">Piegādes adrese</a>
+                        <a href="./pirkumi.html">Pirkumi</a>
+                    </aside>
+                    <div class="content">
+                        <h3>Maksātāja dati:</h3>
+                        <form>
+                            <input type="text" id="name" placeholder="Vārds, Uzvārds" name="name" class="text-input">
+                            <input type="text" id="city" name="city" placeholder="Pilsēta" class="text-input">
+                            <input type="email" id="email" name="email" placeholder="E-pasts" class="text-input">
+                            <input type="text" id="region" name="region" placeholder="Novads" class="text-input">
+                            <input type="tel" name="tel" id="tel" placeholder="Telefona numurs" class="text-input">
+                            <input type="text" id="country" name="country" placeholder="Valsts" class="text-input">
+                            <input type="text" id="adress" name="adress" placeholder="Iela / māja / numurs" class="text-input">
+                            <input type="text" id="post-index" name="post-index" placeholder="Pasta indekss" class="text-input">
+                            <input type="submit" value="labot">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top footer-content-wrap">
+            <div class="footer-content">
+                <a href="index.html"><img src="./assets/images/logo-white.svg" alt="Logo"></a>
+                <div class="footer-table">
+                    <div class="col">
+                        <a href="./ergonomika.html">Par Ergonomiku</a>
+                        <a href="./par-mums.html">Par mums</a>
+                        <a href="./jaunumi.html">Jaunumi</a>
+                    </div>
+                    <div class="col">
+                        <a href="./eveikals-galvena.html">E-veikals</a>
+                        <a href="./rekviziti-fiz.html">Mans profils</a>
+                        <a href="./grozs.html">Grozs</a>
+                    </div>
+                    <div class="col">
+                        <a href="./kontakti.html">Kontakti</a>
+                        <a href="./piegades-adrese.html">Piegāde</a>
+                        <a href="./text-page.html">Privātuma politika</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="./assets/images/facebook.svg" alt="">
+                            Facebook
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/instagram.svg" alt="">
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom footer-content-wrap">
+            <div class="footer-content">
+                <div class="col">
+                    <div class="title">Biroja mēbeles un krēsli</div>
+                    <div class="item">Adrese: Atlasa iela 8, Rīga</div>
+                    <div class="item">Darba laiks: P-Pk.: 9:00 - 17:00</div>
+                    <div class="item">Telefona nr: <strong>+371 26994554, +371 29405794</strong></div>
+                    <div class="item">E-pasts: <strong>furniture@ekspobirojs.lv</strong></div>
+                </div>
+                <div class="col">
+                    <div class="title">Biroja preču veikals</div>
+                    <div class="item">Adrese: Čiekurkalna 1. līnija 11, Rīga</div>
+                    <div class="item">Darba laiks: P-Pk.: 9:00 - 17:00</div>
+                    <div class="item">Telefona nr: <strong>+371 67501518</strong></div>
+                    <div class="item">E-pasts: <strong>info@ekspobirojs.lv</strong></div>
+                </div>
+                <div class="col">
+                    <div class="title">Birojs</div>
+                    <div class="item">Adrese: Čiekurkalna 1. līnija 11, Rīga</div>
+                    <div class="item">Darba laiks: P-Pk.: 8:30 - 17:00</div>
+                    <div class="item">Telefona nr: <strong>+371 67501507</strong></div>
+                    <div class="item">Fakss: <strong>+371 67501539</strong></div>
+                    <div class="item">E-pasts: <strong>info@ekspobirojs.lv</strong></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script>
+        $('.dropdown .head').click(function() {
+            $(this).toggleClass('active')
+            $(this).siblings('.body').toggle('slide', {direction: 'up'}, 500)
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.hamburger').click(function() {
+                $('.mob-menu').toggle('slide', {direction: 'right'}, 500)
+            })
+            $('.mob-menu .close').click(function() {
+                $('.mob-menu').toggle('slide', {direction: 'right'}, 500)
+            })
+        })
+
+        $(document).ready(function() {
+            $('#login-desk').click(function() {
+                $('.pop-ups').show();
+                $('.pop-up.login').toggle('slide', {direction: 'up'}, 500)
+            })
+
+            $('#login-mob').click(function() {
+                $('.pop-ups').show();
+                $('.pop-up.login').toggle('slide', {direction: 'right'}, 500)
+            })
+
+            $('.pop-up.login .forgot').click(function() {
+                if ($(window).width() > 1024) {
+                    $('.pop-up.login').toggle('slide', {direction: 'up'}, 500)
+                    setTimeout(()=>{$('.pop-up.forgot').toggle('slide', {direction: 'up'}, 500)}, 550)
+                } else {
+                    $('.pop-up.login').toggle('slide', {direction: 'right'}, 500)
+                    setTimeout(()=>{$('.pop-up.forgot').toggle('slide', {direction: 'right'}, 500)}, 550)
+                }
+            })
+
+            $('.pop-up.forgot .send-btn').click(function(e) {
+                e.preventDefault();
+                if ($(window).width() > 1024) {
+                    $('.pop-up.forgot').toggle('slide', {direction: 'up'}, 500)
+                    setTimeout(()=>{$('.pop-up.ty').toggle('slide', {direction: 'up'}, 500)}, 550)
+                } else {
+                    $('.pop-up.forgot').toggle('slide', {direction: 'right'}, 500)
+                    setTimeout(()=>{$('.pop-up.ty').toggle('slide', {direction: 'right'}, 500)}, 550)
+                }
+            })
+
+            $('.pop-ups').click(function(e) {
+                if(e.target !== e.currentTarget) return;
+                if ($(window).width() > 1024) {
+                    $('.pop-up.login').hide('slide', {direction: 'up'}, 500)
+                    $('.pop-up.forgot').hide('slide', {direction: 'up'}, 500)
+                    $('.pop-up.ty').hide('slide', {direction: 'up'}, 500)
+                } else {
+                    $('.pop-up.login').hide('slide', {direction: 'right'}, 500)
+                    $('.pop-up.forgot').hide('slide', {direction: 'right'}, 500)
+                    $('.pop-up.ty').hide('slide', {direction: 'right'}, 500)
+                }
+                setTimeout(()=>{$(this).hide()}, 550)
+            })
+
+            $('.pop-up svg').click(function() {
+                if ($(window).width() > 1024) {
+                    $('.pop-up.login').hide('slide', {direction: 'up'}, 500)
+                    $('.pop-up.forgot').hide('slide', {direction: 'up'}, 500)
+                    $('.pop-up.ty').hide('slide', {direction: 'up'}, 500)
+                } else {
+                    $('.pop-up.login').hide('slide', {direction: 'right'}, 500)
+                    $('.pop-up.forgot').hide('slide', {direction: 'right'}, 500)
+                    $('.pop-up.ty').hide('slide', {direction: 'right'}, 500)
+                }
+                setTimeout(()=>{$('.pop-ups').hide()}, 550)
+            })
+        })
+    </script>
+</body>
+</html>

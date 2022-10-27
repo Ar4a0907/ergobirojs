@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Ergobirojs</title>
+</head>
+<body>
+    <div class="mob-menu">
+        <div class="menu-header">
+            <div class="left-side">
+                <div class="close">
+                    <img src="./assets/images/close-mob.svg" alt="">
+                </div>
+            </div>
+            <a href="./index.html" class="index-link">
+                <img src="./assets/images/logo-orange.svg" alt="Logo">
+            </a>
+            <div class="right-side">
+                <a href="#">
+                    <img src="./assets/images/profile-mob.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/images/cart-mob.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="menu-body">
+            <a href="./ergonomika.html">Par Ergonomiku</a>
+            <a href="./par-mums.html">Par mums</a>
+            <a href="./jaunumi.html">Jaunumi</a>
+            <a href="./eveikals-galvena.html">E-veikals</a>
+            <a href="./rekviziti-fiz.html">Mans profils</a>
+            <a href="./grozs.html">Grozs</a>
+            <a href="./kontakti.html">Kontakti</a>
+            <a href="./piegades-adrese.html">Piegāde</a>
+            <a href="./text-page.html">Privātuma politika</a>
+            <a href="#">
+                <img src="./assets/images/facebook.svg" alt="">
+                Facebook
+            </a>
+            <a href="#">
+                <img src="./assets/images/instagram.svg" alt="">
+                Instagram
+            </a>
+        </div>
+    </div>
+
+    <div class="pop-ups">
+        <div class="pop-up login">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="21.2134" width="30" height="30" rx="15" transform="rotate(45 21.2134 0)" fill="#1F2022"/>
+                <path d="M25.4561 16.9707L16.9708 25.456" stroke="white" stroke-width="3"/>
+                <path d="M25.4561 25.4561L16.9708 16.9708" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="title">Pieslēgties</div>
+            <form>
+                <input type="email" id="email-login" name="email" placeholder="E-pasts" class="text-input">
+                <input type="password" name="password" id="password" placeholder="Parole" class="text-input">
+                <input type="submit" value="Nosutīt">
+            </form>
+            <div class="forgot">
+                Aizmirsu paroli
+            </div>
+            <a href="./registracija-fiz.html">
+                Reģistrēties
+            </a>
+        </div>
+        <div class="pop-up forgot">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="21.2134" width="30" height="30" rx="15" transform="rotate(45 21.2134 0)" fill="#1F2022"/>
+                <path d="M25.4561 16.9707L16.9708 25.456" stroke="white" stroke-width="3"/>
+                <path d="M25.4561 25.4561L16.9708 16.9708" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="title">Aizmirsu paroli</div>
+            <form>
+                <input type="email" id="email-forgot" name="email" placeholder="E-pasts" class="text-input">
+                <p>
+                    Ievadiet savu epasta adresi un mēs jums nosūtīsim instrukciju kā izveidot jaunu paroli
+                </p>
+                <input type="submit" value="Nosutīt" class="send-btn">
+            </form>
+        </div>
+        <div class="pop-up ty">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="21.2134" width="30" height="30" rx="15" transform="rotate(45 21.2134 0)" fill="#1F2022"/>
+                <path d="M25.4561 16.9707L16.9708 25.456" stroke="white" stroke-width="3"/>
+                <path d="M25.4561 25.4561L16.9708 16.9708" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="title">Paldies</div>
+            <p>Mēs jums nosūtīsim instrukciju kā izveidot jaunu paroli</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="left-side">
+                <a href="./ergonomika.html">Par Ergonomiku</a>
+                <a href="./par-mums.html">Par mums</a>
+                <a href="./jaunumi.html">Jaunumi</a>
+            </div>
+            <div class="left-side mob">
+                <img src="./assets/images/hamburger.svg" alt="" class="hamburger">
+            </div>
+            <a href="./index.html" class="index-link">
+                <img src="./assets/images/logo-orange.svg" alt="Logo">
+            </a>
+            <div class="right-side">
+                <a href="#" class="active">E-veikals</a>
+                <a href="./kontakti.html">Kontakti</a>
+                <a href="#" id="login-desk"><img src="./assets/images/person-icon.svg" alt="Icon"></a>
+                <a href="./grozs.html">
+                    <img src="./assets/images/cart.svg" alt="">
+                    <img src="./assets/images/cart-white.svg" alt="" class="cart-white">
+                    <div class="items"><span>4</span></div>
+                </a>
+            </div>
+            <div class="right-side mob"> 
+                <a href="#" id="login-mob">
+                    <img src="./assets/images/profile-mob.svg" alt="Profile">
+                </a>
+                <a href="#">
+                    <img src="./assets/images/cart-mob.svg" alt="Cart">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-content sand-bg border-bottom">
+            <div class="content-wrap">
+                <a href="#" onclick="history.back();" class="back">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#1F2022"/>
+                        <path d="M18 21L12 15L18 9" stroke="white" stroke-width="3"/>
+                    </svg>              
+                    Atgriezties          
+                </a>
+
+                <div class="product-flex">
+                    <div class="gallery">
+                        <a href="./assets/images/prod1.jpg" data-fancybox="gallery" data-caption="Lorem ipsum" class="big-img">
+                            <img src="./assets/images/prod1.jpg" alt="Bilde">
+                        </a>
+                        <div class="small-gallery">
+                            <div class="swiper product-gallery">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/prod1.jpg" data-fancybox="gallery" data-caption="Lorem ipsum">
+                                            <img src="./assets/images/prod1.jpg" alt="1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/prod2.jpg" data-fancybox="gallery" data-caption="Lorem ipsum">
+                                            <img src="./assets/images/prod2.jpg" alt="1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/prod3.jpg" data-fancybox="gallery" data-caption="Lorem ipsum">
+                                            <img src="./assets/images/prod3.jpg" alt="1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/prod2.jpg" data-fancybox="gallery" data-caption="Lorem ipsum">
+                                            <img src="./assets/images/prod2.jpg" alt="1">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/prod3.jpg" data-fancybox="gallery" data-caption="Lorem ipsum">
+                                            <img src="./assets/images/prod3.jpg" alt="1">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="swiper-button-prev product">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#1F2022"/>
+                                    <path d="M18 21L12 15L18 9" stroke="white" stroke-width="3"/>
+                                </svg>  
+                            </div>
+                            <div class="swiper-button-next product">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="30" height="30" rx="15" fill="#1F2022"/>
+                                    <path d="M12 9L18 15L12 21" stroke="white" stroke-width="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="title">
+                            Krēsls Navago Mesh
+                        </div>
+                        <p>
+                            NAVIGO – pareizais virziens modernai darba vietai!
+                            <br><br>
+                            Veselība ir viens no svarīgākajiem cilvēku dzīves kvalitātes noteicējiem. Ērta darba vieta veicina darba efektivitāti, produktivitāti un kvalitāti.
+                            <br><br>
+                            Funkcionāls un pareizi pielāgots krēsls ir ergonomiskas darba vietas pamats. NAVIGO mehānismu ergonomiskās funkcijas ļauj pielāgot krēsla iestatījumus katra lietotāja individuālajām vajadzībām.
+                            <br><br>
+                            Krēsls par pieejamu cenu un tajā pašā laikā nodrošina augstu komfortu un pievilcīgu dizainu! NAVIGO ir ideāls risinājums modernai darba vietai gan birojā, gan mājās.
+                        </p>
+                        <div class="pirkt">
+                            <div>
+                                <div class="title">
+                                    Cena
+                                </div>
+                                <div class="cena">
+                                    270.00 €
+                                </div>
+                                <div class="discount">
+                                    370.00 € 
+                                </div>
+                            </div>
+                            <div>
+                                <div class="title">
+                                    Daudzums
+                                </div>
+                                <div class="daudzums">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="30" height="30" rx="15" fill="#1F2022"/>
+                                        <path d="M21.5 15.5L9.5 15.5" stroke="white" stroke-width="3"/>
+                                    </svg>
+                                    1
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="30" height="30" rx="15" fill="#1F2022"/>
+                                        <path d="M15.5 9.5V21.5" stroke="white" stroke-width="3"/>
+                                        <path d="M21.5 15.5L9.5 15.5" stroke="white" stroke-width="3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            Pievienot Grozam
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-content sand-bg">
+            <div class="content-wrap">
+                <div class="tab">
+                    <button class="tablinks" for="1">
+                        <span>Pilns apraksts par produktu </span>
+                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.91205 7.66059L6.32704 6.2456L7.03404 6.95359L4.91205 9.07459L3.49805 7.66059L4.20505 6.95359L4.91205 7.66059Z" fill="#1F2022"/>
+                            <path d="M4.91205 11.6606L6.32704 10.2456L7.03404 10.9536L4.91205 13.0746L3.49805 11.6606L4.20505 10.9536L4.91205 11.6606Z" fill="#1F2022"/>
+                            <path d="M6.32704 14.2456L4.91205 15.6606L4.20505 14.9536L3.49805 15.6606L4.91205 17.0746L7.03404 14.9536L6.32704 14.2456Z" fill="#1F2022"/>
+                            <path d="M8 7.57446H13V8.57446H8V7.57446Z" fill="#1F2022"/>
+                            <path d="M13 11.5745H8V12.5745H13V11.5745Z" fill="#1F2022"/>
+                            <path d="M8 15.5745H13V16.5745H8V15.5745Z" fill="#1F2022"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.99805 0.574463H11.998V1.07447H12V1.57446H16V20.5745H0V1.57446L3.99805 1.57446V0.574463ZM12 3.07447V2.57446H15V19.5745H1V2.57446L3.99805 2.57446V3.57446H11.998V3.07447H12ZM11 2.57446H4.99805V1.57446H11V2.57446Z" fill="#1F2022"/>
+                        </svg>
+                    </button>
+                    <button class="tablinks" for="2">
+                        <span>Piegāde</span>
+                        <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.45 12.5745C17.218 13.7155 16.209 14.5745 15 14.5745C13.791 14.5745 12.782 13.7155 12.55 12.5745H8.95001C8.71801 13.7155 7.709 14.5745 6.5 14.5745C5.291 14.5745 4.28199 13.7155 4.04999 12.5745H1V11.5745H4.04999C4.28199 10.4335 5.291 9.57446 6.5 9.57446C7.709 9.57446 8.71801 10.4335 8.95001 11.5745H12.55C12.782 10.4335 13.791 9.57446 15 9.57446C16.209 9.57446 17.218 10.4335 17.45 11.5745H19V8.24146L18.125 7.07446H12.5V1.57446H2V0.574463H13.5V2.07446H16.29L18.419 5.79946L20 7.90746V12.5745H17.45ZM6.5 10.5745C7.328 10.5745 8 11.2465 8 12.0745C8 12.9025 7.328 13.5745 6.5 13.5745C5.672 13.5745 5 12.9025 5 12.0745C5 11.2465 5.672 10.5745 6.5 10.5745ZM15 10.5745C15.828 10.5745 16.5 11.2465 16.5 12.0745C16.5 12.9025 15.828 13.5745 15 13.5745C14.172 13.5745 13.5 12.9025 13.5 12.0745C13.5 11.2465 14.172 10.5745 15 10.5745ZM4 8.57446H1V9.57446H4V8.57446ZM6 6.07446H0V7.07446H6V6.07446ZM13.5 4.07246V4.07446V6.07446H17.424L15.71 3.07446H13.5V4.07246ZM7 3.57446H1V4.57446H7V3.57446Z" fill="#1F2022"/>
+                        </svg>
+                    </button>
+                    <button class="tablinks" for="3">
+                        <span>Montāža</span>
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 12.0745H15V7.07446H13V12.0745ZM18 15.0745V16.0745H10V15.0745C10 13.9695 10.895 13.0745 12 13.0745C13.265 13.0745 14.735 13.0745 16 13.0745C17.104 13.0745 18 13.9695 18 15.0745ZM19 3.57446C19 3.57846 19 3.58246 19 3.58646C19 4.95546 17.88 6.07446 16.5 6.07446H10V1.07446H16.5C17.88 1.07446 19 2.19346 19 3.57446ZM9 2.07446V5.07446H8V2.07446H9ZM7 3.07446V4.07446H5V3.07446H7ZM17 2.07446H12V3.07446H17V2.07446ZM16 12.0745V7.07446H16.5C18.433 7.07446 20 5.50746 20 3.57446C20 1.64146 18.433 0.0744629 16.5 0.0744629H9V1.07446H7V2.07446H4V3.07446H0V4.07446H4V5.07446H7V6.07446H9V7.07446H12V12.0745C10.343 12.0745 9 13.4175 9 15.0745C9 16.1375 9 17.0745 9 17.0745H19V15.0745C19 13.4175 17.657 12.0745 16 12.0745Z" fill="#1F2022"/>
+                        </svg>                            
+                    </button>
+                </div>
+                  
+                <div id="1" class="tabcontent wysiwyg-field">
+                    <p>
+                        NAVIGO – pareizais virziens modernai darba vietai!
+                        <br><br>
+                        Veselība ir viens no svarīgākajiem cilvēku dzīves kvalitātes noteicējiem. Ērta darba vieta veicina darba efektivitāti, produktivitāti un kvalitāti. Funkcionāls un pareizi pielāgots krēsls ir ergonomiskas darba vietas pamats. NAVIGO mehānismu ergonomiskās funkcijas ļauj pielāgot krēsla iestatījumus katra lietotāja individuālajām vajadzībām.
+                        <br><br>
+                        Krēsls par pieejamu cenu un tajā pašā laikā nodrošina augstu komfortu un pievilcīgu dizainu! NAVIGO ir ideāls risinājums modernai darba vietai gan birojā, gan mājās. Krēsla dizainers: Oscar Buffon
+                    </p>
+                    <ul>
+                        <li>Elpojoša, ergonomiska sieta materiāla atzveltne melnā vai pelēkā krāsā.</li>
+                        <li>Sinhronais mehānisms ļauj lietotājam pielāgot krēsla atzveltnes un sēdes atliekumu savām vēlmēm – izvēloties precīzu novietojumu vienā no piecām pozīcijām vai atstājot brīvā kustībā. Kustības ir ļoti svarīgas, tās ļauj ķermenim atjaunoties un veicināt optimālu asinsriti</li>
+                        <li>Elpojoša, ergonomiska sieta materiāla atzveltne melnā vai pelēkā krāsā. Sieta materiāls ir pieejams arī 3D versijā.</li>
+                        <li>Regulējams sēdes dziļums, kas ļauj pielāgot krēslu auguma parametriem</li>
+                        <li>ANTI-SHOCK funkcija pasargā no atzveltnes trieciena tās atliekuma regulēšanas laikā</li>
+                        <li>Ērti regulējams sēdes un atzveltnes augstums</li>
+                    </ul>
+                </div>
+                  
+                <div id="2" class="tabcontent">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, unde!
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam officia id consequuntur ipsum facere debitis laudantium quaerat, molestiae officiis voluptatum eum pariatur maxime accusamus reiciendis deleniti rem aliquam accusantium praesentium error, sapiente hic inventore corporis optio. Voluptatum nulla eaque provident atque repellendus, alias repudiandae ea dolore ut molestiae, incidunt odit!
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere assumenda autem tempore quos quisquam incidunt eum amet voluptatum esse ad!
+                    </p>
+                </div>
+                  
+                <div id="3" class="tabcontent">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, unde!
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam officia id consequuntur ipsum facere debitis laudantium quaerat, molestiae officiis voluptatum eum pariatur maxime accusamus reiciendis deleniti rem aliquam accusantium praesentium error, sapiente hic inventore corporis optio. Voluptatum nulla eaque provident atque repellendus, alias repudiandae ea dolore ut molestiae, incidunt odit!
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere assumenda autem tempore quos quisquam incidunt eum amet voluptatum esse ad!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="page-content">
+            <div class="content-wrap">
+                <h2>Līdzīgi produkti</h2>
+                <div class="lidzigi-produkti">
+                    <div class="swiper lidzigi-gallery">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide">
+                                <div class="img-wrap">
+                                    <img src="./assets/images/kresls1.png" alt="Krēsls">
+                                </div>
+                                <div class="name">
+                                    Krēsls Navago
+                                </div>
+                                <div class="cena">
+                                    270.00 €
+                                </div>
+                                <div class="reala-cena"></div>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div class="img-wrap">
+                                    <img src="./assets/images/kresls2.png" alt="Krēsls">
+                                </div>
+                                <div class="name">
+                                    Krēsls Navago
+                                </div>
+                                <div class="cena">
+                                    270.00 €
+                                </div>
+                                <div class="reala-cena"></div>
+    
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div class="img-wrap">
+                                    <img src="./assets/images/kresls3.png" alt="Krēsls">
+                                </div>
+                                <div class="name">
+                                    Krēsls Navago
+                                </div>
+                                <div class="cena">
+                                    270.00 €
+                                </div>
+                                <div class="reala-cena"></div>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div class="img-wrap">
+                                    <img src="./assets/images/kresls3.png" alt="Krēsls">
+                                </div>
+                                <div class="name">
+                                    Krēsls Navago
+                                </div>
+                                <div class="cena">
+                                    270.00 €
+                                </div>
+                                <div class="reala-cena"></div>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div class="img-wrap">
+                                    <img src="./assets/images/kresls3.png" alt="Krēsls">
+                                </div>
+                                <div class="name">
+                                    Krēsls Navago
+                                </div>
+                                <div class="cena">
+                                    270.00 €
+                                </div>
+                                <div class="reala-cena"></div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="swiper-button-prev lidzigi">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#1F2022"/>
+                            <path d="M18 21L12 15L18 9" stroke="white" stroke-width="3"/>
+                        </svg>  
+                    </div>
+                    <div class="swiper-button-next lidzigi">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="30" rx="15" fill="#1F2022"/>
+                            <path d="M12 9L18 15L12 21" stroke="white" stroke-width="3"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top footer-content-wrap">
+            <div class="footer-content">
+                <a href="index.html"><img src="./assets/images/logo-white.svg" alt="Logo"></a>
+                <div class="footer-table">
+                    <div class="col">
+                        <a href="./ergonomika.html">Par Ergonomiku</a>
+                        <a href="./par-mums.html">Par mums</a>
+                        <a href="./jaunumi.html">Jaunumi</a>
+                    </div>
+                    <div class="col">
+                        <a href="./eveikals-galvena.html">E-veikals</a>
+                        <a href="./rekviziti-fiz.html">Mans profils</a>
+                        <a href="./grozs.html">Grozs</a>
+                    </div>
+                    <div class="col">
+                        <a href="./kontakti.html">Kontakti</a>
+                        <a href="./piegades-adrese.html">Piegāde</a>
+                        <a href="./text-page.html">Privātuma politika</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="./assets/images/facebook.svg" alt="">
+                            Facebook
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/instagram.svg" alt="">
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom footer-content-wrap">
+            <div class="footer-content">
+                <div class="col">
+                    <div class="title">Biroja mēbeles un krēsli</div>
+                    <div class="item">Adrese: Atlasa iela 8, Rīga</div>
+                    <div class="item">Darba laiks: P-Pk.: 9:00 - 17:00</div>
+                    <div class="item">Telefona nr: <strong>+371 26994554, +371 29405794</strong></div>
+                    <div class="item">E-pasts: <strong>furniture@ekspobirojs.lv</strong></div>
+                </div>
+                <div class="col">
+                    <div class="title">Biroja preču veikals</div>
+                    <div class="item">Adrese: Čiekurkalna 1. līnija 11, Rīga</div>
+                    <div class="item">Darba laiks: P-Pk.: 9:00 - 17:00</div>
+                    <div class="item">Telefona nr: <strong>+371 67501518</strong></div>
+                    <div class="item">E-pasts: <strong>info@ekspobirojs.lv</strong></div>
+                </div>
+                <div class="col">
+                    <div class="title">Birojs</div>
+                    <div class="item">Adrese: Čiekurkalna 1. līnija 11, Rīga</div>
+                    <div class="item">Darba laiks: P-Pk.: 8:30 - 17:00</div>
+                    <div class="item">Telefona nr: <strong>+371 67501507</strong></div>
+                    <div class="item">Fakss: <strong>+371 67501539</strong></div>
+                    <div class="item">E-pasts: <strong>info@ekspobirojs.lv</strong></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script>
+        const productGallery = new Swiper('.swiper.product-gallery', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+
+            navigation: {
+                nextEl: '.swiper-button-next.product',
+                prevEl: '.swiper-button-prev.product',
+            },
+
+            breakpoints: {
+                541: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+
+        const lidzigi = new Swiper('.swiper.lidzigi-gallery', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+
+            navigation: {
+                nextEl: '.swiper-button-next.lidzigi',
+                prevEl: '.swiper-button-prev.lidzigi',
+            },
+
+            breakpoints: {
+                400: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 25,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 25,
+                },
+            },
+        });
+    </script>
+    <script>
+        $('.tablinks').click(function() {
+            if(!$(this).hasClass('active')) {
+                atribute = $(this).attr('for')
+                $('.tablinks').removeClass('active')
+                $(this).addClass('active')
+                $('.tabcontent').hide()
+                $(`.tabcontent#${atribute}`).toggle('slide', {direction: 'up'}, 500)
+            }
+        })
+
+        $('.tablinks')[0].click()
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.hamburger').click(function() {
+                $('.mob-menu').toggle('slide', {direction: 'right'}, 500)
+            })
+            $('.mob-menu .close').click(function() {
+                $('.mob-menu').toggle('slide', {direction: 'right'}, 500)
+            })
+        })
+
+        $(document).ready(function() {
+            $('#login-desk').click(function() {
+                $('.pop-ups').show();
+                $('.pop-up.login').toggle('slide', {direction: 'up'}, 500)
+            })
+
+            $('#login-mob').click(function() {
+                $('.pop-ups').show();
+                $('.pop-up.login').toggle('slide', {direction: 'right'}, 500)
+            })
+
+            $('.pop-up.login .forgot').click(function() {
+                if ($(window).width() > 1024) {
+                    $('.pop-up.login').toggle('slide', {direction: 'up'}, 500)
+                    setTimeout(()=>{$('.pop-up.forgot').toggle('slide', {direction: 'up'}, 500)}, 550)
+                } else {
+                    $('.pop-up.login').toggle('slide', {direction: 'right'}, 500)
+                    setTimeout(()=>{$('.pop-up.forgot').toggle('slide', {direction: 'right'}, 500)}, 550)
+                }
+            })
+
+            $('.pop-up.forgot .send-btn').click(function(e) {
+                e.preventDefault();
+                if ($(window).width() > 1024) {
+                    $('.pop-up.forgot').toggle('slide', {direction: 'up'}, 500)
+                    setTimeout(()=>{$('.pop-up.ty').toggle('slide', {direction: 'up'}, 500)}, 550)
+                } else {
+                    $('.pop-up.forgot').toggle('slide', {direction: 'right'}, 500)
+                    setTimeout(()=>{$('.pop-up.ty').toggle('slide', {direction: 'right'}, 500)}, 550)
+                }
+            })
+
+            $('.pop-ups').click(function(e) {
+                if(e.target !== e.currentTarget) return;
+                if ($(window).width() > 1024) {
+                    $('.pop-up.login').hide('slide', {direction: 'up'}, 500)
+                    $('.pop-up.forgot').hide('slide', {direction: 'up'}, 500)
+                    $('.pop-up.ty').hide('slide', {direction: 'up'}, 500)
+                } else {
+                    $('.pop-up.login').hide('slide', {direction: 'right'}, 500)
+                    $('.pop-up.forgot').hide('slide', {direction: 'right'}, 500)
+                    $('.pop-up.ty').hide('slide', {direction: 'right'}, 500)
+                }
+                setTimeout(()=>{$(this).hide()}, 550)
+            })
+
+            $('.pop-up svg').click(function() {
+                if ($(window).width() > 1024) {
+                    $('.pop-up.login').hide('slide', {direction: 'up'}, 500)
+                    $('.pop-up.forgot').hide('slide', {direction: 'up'}, 500)
+                    $('.pop-up.ty').hide('slide', {direction: 'up'}, 500)
+                } else {
+                    $('.pop-up.login').hide('slide', {direction: 'right'}, 500)
+                    $('.pop-up.forgot').hide('slide', {direction: 'right'}, 500)
+                    $('.pop-up.ty').hide('slide', {direction: 'right'}, 500)
+                }
+                setTimeout(()=>{$('.pop-ups').hide()}, 550)
+            })
+        })
+    </script>
+</body>
+</html>
