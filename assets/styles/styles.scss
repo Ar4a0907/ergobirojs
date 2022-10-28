@@ -992,6 +992,7 @@ form {
     }
 
     .checkbox {
+      flex-shrink: 0;
       width: 20px;
       height: 20px;
       background-color: #fff;
@@ -1762,6 +1763,10 @@ textarea {
     background-color: #e7e5e1;
     margin-bottom: 20px;
   }
+
+  .registration-links {
+    margin-bottom: 0;
+  }
 }
 
 .back {
@@ -2359,6 +2364,27 @@ h2.date-after {
   margin-bottom: 50px;
 }
 
+.autorization-btn {
+  margin-bottom: 20px;
+  appearance: none;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+  padding: 15px 25px;
+  background-color: #1f2022;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #e86319;
+  }
+}
+
 @media only screen and (max-height: 750px) {
   .index-banner-wrap .swiper .swiper-slide .slider-content .text .slide-title {
     font-size: 40px;
@@ -2645,6 +2671,9 @@ h2.date-after {
 }
 
 @media only screen and (max-width: 540px) {
+  .form-flex .registration-links {
+    margin-bottom: 20px;
+  }
   .thank-you .buttons {
     flex-direction: column;
     gap: 20px;

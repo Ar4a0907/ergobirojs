@@ -397,6 +397,11 @@
                                         </select>
                                     </div>
                                     <h3>Maksātāja dati:</h3>
+                                    <button class="autorization-btn">Autorizēties</button>
+                                    <div class="registration-links">
+                                        <a href="./noformesana-fiz.html" class="checkbox-wrap"><div class="checkbox"></div>Fiziska persona</a>
+                                        <a href="./noformesana-jur.html" class="checkbox-wrap active"><div class="checkbox"></div>Juridiska persona</a>
+                                    </div>
                                     <input type="text" id="name" placeholder="Vārds, Uzvārds" name="name" class="text-input">
                                     <input type="email" id="email" name="email" placeholder="E-pasts" class="text-input">
                                     <input type="tel" name="tel" id="tel" placeholder="Telefona numurs" class="text-input">
@@ -588,6 +593,12 @@
     $(document).ready(function() {
         $('#login-desk').click(function() {
             $('.pop-ups').show();
+            $('.pop-up.login').toggle('slide', {direction: 'up'}, 500)
+        })
+
+        $('.autorization-btn').click(function(e) {
+            e.preventDefault()
+            $('.pop-ups').show()
             $('.pop-up.login').toggle('slide', {direction: 'up'}, 500)
         })
 
